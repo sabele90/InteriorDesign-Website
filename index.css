@@ -1,97 +1,198 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Nanum Gothic', sans-serif;
+  color: rgb(87, 32, 32);
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nanum Gothic", sans-serif;
 }
-.header{
- display: flex;
- justify-content: space-around;
- align-items: center;
- background-color: cornflowerblue;
- width: 100vw;
- height: 20vh;
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to top, #f8f0d4, #e9dfba, #d8c0a2);
+  width: 100vw;
+  height: 7vh;
+  font-size: large;
 }
-.son {
-    background-color: azure;
-    padding: 20px;
-    border-radius: 10%;
-    
+
+.bar_side {
+  background-image: url(./images/sideimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  position: absolute;
+  width: 20vw;
+  height: 100vh;
 }
-.bar_side{
-    background-image: url(./images/sideimage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 30px;
-    padding:30px;
-    position: absolute;
-    width: 20vw;
-    height: 100vh;
-    
-}
-.bar_side2{
-    background-color: azure;
-    margin: 30px;
-    padding:30px;
-    position: absolute;
-    right: 0;
-    width: 20vw;
-    height: 100vh;
-    
+.bar_side2 {
+  background-image: url(./images/image1.jpg);
+  background-position-x: -200px;
+  background-size: cover;
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  width: 20vw;
+  height: 100vh;
 }
 
 .main_box {
-    background-image: url(./images/background1.jpg);
+  background: linear-gradient(to bottom, #f8f0d4, #e9dfba, #d8c0a2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.title {
+  background-image: url(./images/backgroundTitle.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 60vw;
+  justify-content: center;
+  font-size: xx-large;
+}
+.tittle h2 {
+  padding: 80px;
+  font-size: 80px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(./images/background3.jpg);
+  background-size: cover;
+  height: 150vh;
+  width: 60%;
+}
+.imag1 {
+  z-index: 1;
+  background-image: url(./images/image3.jpg);
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  transition: 2s;
+}
+
+.imag1:hover {
+  transform: scale(1.1);
+}
+.imag2 {
+  z-index: 1;
+  background-image: url(./images/image4.jpg);
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  transition: 2s;
+}
+
+.imag2:hover {
+  transform: scale(1.1);
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(./images/background2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 70vh;
+  width: 100vw;
+}
+.pictureMaterials, .pictureFurniture, .pictureLighting, .pictureConfort{
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.pictureMaterials{
+  background-image: url(./images/materials.jpg);
+  background-size: cover;
+  }
+.pictureFurniture{
+    background-image: url(./images/furniture.jpg);
+    background-size: cover;
+  }
+  .pictureLighting{
+    background-image: url(./images/lighting.jpg);
+    background-size: cover;
+    background-position-y: -30px;
+  }
+  .pictureConfort{
+    background-image: url(./images/confort.jpg);
+    background-size: cover;
+    background-position-y: -50px;
+  }
+.footerContainer {
+  background: linear-gradient(to bottom, #f8f0d4, #e9dfba, #d8c0a2);
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+  height: 20vh;
+  width: 100vw;
+}
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: content;
+}
+
+.line {
+  position: absolute;
+  width: 80%;
+  bottom: 60px;
+}
+.new,
+.catalog,
+.offers,
+.trendy,
+.about,
+.contact {
+  transition: 1s;
+}
+.new:hover {
+  transform: scale(0.9);
+}
+
+.catalog:hover {
+  transform: scale(0.9);
+}
+.offers:hover {
+  transform: scale(0.9);
+}
+.trendy:hover {
+  transform: scale(0.9);
+}
+.about:hover {
+  transform: scale(0.9);
+}
+.contact:hover {
+  transform: scale(0.9);
+}
+
+.materials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.furniture {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
- 
-}
-.tittle{
-   background-color: blue;
-   height: 30vh;
-   width: 50vw;
-   text-align: center;
-   margin: 30px;
-}
-.tittle h2 {
-    padding: 80px;
-    font-size: 80px;
-}
-.content{
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-around;
-background-image: url(./images/background.jpg);
-background-size: contain;
-height: 80vh;
-width: 50vw;
-}
-.imag1 {
-    
-    background-color: aliceblue;
-    width: 500px;
-    height: 500px;
-    transition: 2s;
-}
- 
-.imag1:hover {
-    transform: scale(1.1);
   }
-
-.bottom{
-background-color: blueviolet;
-flex: content;
-height: 50vh;
-width: 1000vw;
-
-}
-
-footer {
-    background-color: aquamarine;
-    flex: content;
-    height: 10vh;
-    width: 100vw;
-}
+  .lighting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .confort {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
