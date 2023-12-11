@@ -3,6 +3,8 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Nanum Gothic", sans-serif;
+  height: 100vh;
+  width: 100vw;
 }
 .header {
   display: flex;
@@ -21,17 +23,18 @@ body {
   padding: 30px;
   position: absolute;
   width: 20vw;
-  height: 100vh;
+  height: 93.9vh;
 }
 .bar_side2 {
+
   background-image: url(./images/image1.jpg);
-  background-position-x: -200px;
   background-size: cover;
+  background-repeat: no-repeat;
   padding: 30px;
   position: absolute;
   right: 0;
   width: 20vw;
-  height: 100vh;
+  height: 93.9vh;
 }
 
 .main_box {
@@ -52,15 +55,12 @@ body {
   justify-content: center;
   font-size: xx-large;
 }
-.tittle h2 {
-  padding: 80px;
-  font-size: 80px;
-}
+
 .content {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-image: url(./images/background3.jpg);
   background-size: cover;
   height: 150vh;
@@ -70,8 +70,8 @@ body {
   z-index: 1;
   background-image: url(./images/image3.jpg);
   background-size: cover;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   transition: 2s;
 }
 
@@ -82,8 +82,8 @@ body {
   z-index: 1;
   background-image: url(./images/image4.jpg);
   background-size: cover;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   transition: 2s;
 }
 
@@ -97,9 +97,8 @@ body {
   justify-content: space-around;
   align-items: center;
   background-image: url(./images/background2.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: auto;
   height: 70vh;
   width: 100vw;
 }
